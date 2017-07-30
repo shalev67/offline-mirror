@@ -1,0 +1,9 @@
+version: "3"
+services:
+  pypi:
+    build:
+      context: .
+    hostname: pypi
+    container_name: pypi
+    volumes:
+      - ${PYPI_MIRROR_PATH}:/srv/pypi
