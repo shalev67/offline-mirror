@@ -1,0 +1,9 @@
+version: "3"
+services:
+  apt:
+    build:
+      context: .
+    hostname: apt
+    container_name: apt
+    volumes:
+      - ${APT_MIRROR_PATH}:/var/spool/apt-mirror
